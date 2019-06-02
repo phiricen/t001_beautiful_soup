@@ -37,8 +37,16 @@ class SpiderRobot:
 
     # 取得原始資料
     def send(self, url):
-        r = requests.get(url)
-        soup = BeautifulSoup(r.text, 'html.parser')
+        resp = requests.get(url)
+
+        #轉換編碼至UTF-8
+        resp.encoding = 'utf-8'
+
+        #顯示網頁狀態
+        resp.status_code
+        if resp.status_code == '200':
+            soup = BeautifulSoup(resp.text, 'html.parser')
+
         return soup
 
     # 取得文章一覽
