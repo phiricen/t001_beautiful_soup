@@ -3,7 +3,7 @@ import sys
 import json
 import requests
 from bs4 import BeautifulSoup
-from spider.spider_robot import SpiderRobot
+from spider_robot.spider_robot_main import SpiderRobot
 
 class DqYamCom(SpiderRobot):
     url = {
