@@ -14,7 +14,7 @@
 Route::redirect('/', '/article/list/');
 
 // Route::get('/', function () { return view('welcome'); });
-Route::get('/article/'           , 'ArticleController@list');
-Route::get('/article/{site}/{id}', 'ArticleController@view');
+Route::get('/article/', 'ArticleController@list');
+Route::get('/article/{site_code}/{article_id}/', 'ArticleController@view');
 
 
