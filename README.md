@@ -7,6 +7,7 @@
 * [故事](https://gushi.tw/)
 * [說書](http://sobooks.tw/)
 * [DQ 地球圖輯隊-帶你看透全世界](https://dq.yam.com/)
+* [中央社 CNA](https://www.cna.com.tw/)
 
 ## 參考資料
 
