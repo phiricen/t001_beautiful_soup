@@ -1,5 +1,14 @@
 # t01_beautiful_soup
 
+## 內容資源
+
+* PTT 實業坊
+    * [PTT 爬蟲範例教學 _ 程式人筆記 - 點部落](https://dotblogs.com.tw/codinghouse/2018/10/22/pttcrawler)
+* [故事](https://gushi.tw/)
+* [說書](http://sobooks.tw/)
+* [DQ 地球圖輯隊-帶你看透全世界](https://dq.yam.com/)
+* [中央社 CNA](https://www.cna.com.tw/)
+
 ## 參考資料
 
 
