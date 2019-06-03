@@ -10,8 +10,6 @@ import selenium
 
 class SpiderRobot:
     url = {}
-    # def __init__(self):
-        # super(DqYamCom, self).__init__()
 
     def __init__(self):
         self.starter()
@@ -42,11 +40,7 @@ class SpiderRobot:
         #轉換編碼至UTF-8
         resp.encoding = 'utf-8'
 
-        #顯示網頁狀態
-        resp.status_code
-        if resp.status_code == '200':
-            soup = BeautifulSoup(resp.text, 'html.parser')
-
+        soup = BeautifulSoup(resp.text, 'html.parser')
         return soup
 
     # 取得文章一覽
