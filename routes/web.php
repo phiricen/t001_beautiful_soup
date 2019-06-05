@@ -11,7 +11,7 @@
 |
 */
 
-Route::redirect('/', '/article/list/');
+Route::redirect('/', '/article/');
 
 // Route::get('/', function () { return view('welcome'); });
 Route::get('/article/', 'ArticleController@list');
