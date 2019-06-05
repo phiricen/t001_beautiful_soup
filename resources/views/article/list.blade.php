@@ -27,7 +27,7 @@
 						<a>所有文章</a>
 					</li>
 				</ul>
-				<ul class="list-group">
+				<ul class="list-group mt-2">
 					<li class="list-group-item list-group-item-primary d-flex justify-content-between align-items-center">
 						<a>{{ $categories["reference"]["title"] }}</a>
 					</li>
