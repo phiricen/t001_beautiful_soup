@@ -43,8 +43,9 @@ class ArticleController extends BaseController {
 		$dates = [];
 		$date_string = date('Y-m-d');
 		$date_1 = new DateTime($date_string);
+		$date_1->modify('+1 days');
 		$date_2 = new DateTime($date_string);
-		$date_2->modify('-3 days');
+		$date_2->modify('-2 days');
 		$interval = new DateInterval('P1D');
 		$daterange = new DatePeriod($date_2, $interval ,$date_1);
 		foreach ($daterange as $date){
