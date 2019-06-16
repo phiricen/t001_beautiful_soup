@@ -9,12 +9,9 @@ use DatePeriod;
 use DateInterval;
 
 class ArticleController extends BaseController {
+	private $categories = [];
 	public function __construct(Request $request){
-
-	}
-	public function list(){
-
-		$categories = [
+		$this->categories = [
 			'daily' => [
 				'title' => '每日焦點',
 				'code' => 'daily',
@@ -26,13 +23,27 @@ class ArticleController extends BaseController {
 				'sites' => $this->get_sites(),
 			],
 		];
-
-		return view('article/list', [
-			'categories' => $categories,
-		]);
-		
 	}
-	public function view($site_code, $article_id){
+
+	public function view_index(){
+		return view('article/list', [
+			'categories' => $this->categories,
+		]);
+	}
+
+	public function view_daily_article_list(){
+		return view('article/list', [
+			'categories' => $this->categories,
+		]);
+	}
+
+	public function view_site_article_list(){
+		return view('article/list', [
+			'categories' => $this->categories,
+		]);
+	}
+
+	public function view_site_article($site_code, $article_id) {
 		// $article_id = Route::current()->getParameter('article_id');
 		// $site_code = Route::current()->getParameter('site_code');
 		echo '/'.$site_code.'/'.$article_id;

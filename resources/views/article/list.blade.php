@@ -20,7 +20,7 @@
 					</li>
 @foreach ($categories["daily"]["dates"] as $date)
 					<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-						<a>{{ $date }}</a>
+						<a href="/article/daily/{{ $date }}/">{{ $date }}</a>
 					</li>
 @endforeach
 					<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
@@ -31,9 +31,9 @@
 					<li class="list-group-item list-group-item-primary d-flex justify-content-between align-items-center">
 						<a>{{ $categories["reference"]["title"] }}</a>
 					</li>
-@foreach ($categories["reference"]["sites"] as $site)
+@foreach ($categories["reference"]["sites"] as $code => $site)
 					<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-						<a>{{ $site["title"] }}</a>
+						<a href="/article/{{ $code }}/">{{ $site["title"] }}</a>
 						<span class="badge badge-primary badge-pill">0</span>
 					</li>
 @endforeach
